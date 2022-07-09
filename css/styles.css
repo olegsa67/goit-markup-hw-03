@@ -21,6 +21,20 @@ body {
 
 /* reset styles */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
     color: currentColor;
@@ -28,12 +42,33 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
 /* стилі для заголока */
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+    margin-left: 15px;
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
@@ -51,11 +86,24 @@ body {
 }
 
 .header-nav {
+    margin-right: auto;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+}
+
+.header-list {
+    /* padding-top: 32px;
+    padding-bottom: 32px;*/
+    display: flex;
+    gap: 50px;
+}
+
+.header-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link {
@@ -75,6 +123,14 @@ body {
 }
 
 .header-mail {
+    margin-right: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
     color: var(--main-txt-cl);
 }
 
@@ -84,12 +140,23 @@ body {
 }
 
 .header-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
     color: var(--main-txt-cl);
 }
 
 .header-phone:hover,
 .header-phone:focus {
     color: var(--accent-txt-cl);
+}
+
+.main-container {
+    height: 600px;
 }
 
 .main {
@@ -99,6 +166,7 @@ body {
 }
 
 .main-title {
+    width: 696px;
     /*   font-family: var(--main-font); */
     font-weight: 900;
     font-size: 44px;
@@ -109,6 +177,8 @@ body {
 }
 
 .button-action {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
