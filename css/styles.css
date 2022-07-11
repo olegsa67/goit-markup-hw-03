@@ -66,8 +66,11 @@ img {
 }
 
 .bnt {
+    display: flex;
+    align-items: center;
     padding-top: 94px;
     padding-bottom: 50px;
+    gap: 8px;
     padding-left: 350px;
 }
 
@@ -81,9 +84,11 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
+    display: block;
     margin-top: 24px;
     margin-right: 93px;
     margin-bottom: 25px;
@@ -116,11 +121,6 @@ img {
 .header-list {
     display: flex;
     gap: 50px;
-}
-
-.header-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header-link {
@@ -175,7 +175,6 @@ img {
 }
 
 .main-container {
-    height: 600px;
     align-items: center;
     text-align: center;
 }
@@ -186,7 +185,8 @@ img {
 
 .main-title {
     width: 696px;
-    margin-left: 252px;
+    margin: auto;
+    margin-top: 108px;
     margin-bottom: 28px;
     /*   font-family: var(--main-font); */
     font-weight: 900;
@@ -198,8 +198,13 @@ img {
 }
 
 .button-action {
+    max-width: 250px;
+    min-width: 160px;
+    max-height: 50px;
+    padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-bottom: 107px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -222,6 +227,10 @@ img {
 }
 
 .button-filter {
+    max-width: 145px;
+    min-width: 73px;
+    max-height: 38px;
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -258,6 +267,7 @@ img {
 }
 
 .feature-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 /14);
@@ -267,11 +277,16 @@ img {
 }
 
 .feature-txt {
+    width: 270px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+}
+
+.job-container {
+    padding-top: 0;
 }
 
 .job-list {
@@ -280,7 +295,6 @@ img {
 }
 
 .job-title {
-    margin-top: 94px;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -313,20 +327,16 @@ img {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-top: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 20px 24px;
 }
 
 .portfolio-list {
     display: flex;
-    background-color: #F5F4FA;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
 .portfolio-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
@@ -347,6 +357,7 @@ img {
 }
 
 .team-hd {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -354,6 +365,7 @@ img {
 }
 
 .team-title {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -383,10 +395,25 @@ img {
     letter-spacing: 0.03em;
 }
 
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    margin: 0 0 20px 0;
+    width: 145px;
+}
+
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-address {
     color: #ffffff;
+}
+
+.footer-mail {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
