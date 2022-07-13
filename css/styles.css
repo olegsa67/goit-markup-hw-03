@@ -56,11 +56,11 @@ img {
     outline-offset: -2px;*/
 }
 
-.main-container,
-.feature-container,
-.job-container,
-.team-container,
-.footer-container {
+.main,
+.feature,
+.team,
+.portfolio,
+.footer {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -68,23 +68,21 @@ img {
 .bnt {
     display: flex;
     align-items: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
     gap: 8px;
-    padding-left: 350px;
-}
-
-.portfolio-container {
-    padding-bottom: 94px;
 }
 
 
 /* стилі для заголока */
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -181,6 +179,8 @@ img {
 
 .main {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -260,6 +260,11 @@ img {
 
 /* main section */
 
+.feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .feature-list {
     display: flex;
     align-items: center;
@@ -285,10 +290,6 @@ img {
     color: var(--main-txt-cl);
 }
 
-.job-container {
-    padding-top: 0;
-}
-
 .job-list {
     display: flex;
     gap: 30px;
@@ -302,6 +303,12 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-txt-cl);
+}
+
+.team,
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list,
@@ -387,6 +394,9 @@ img {
 }
 
 .footer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #000000;
     font-family: var(--main-font);
     font-weight: 400;
@@ -395,14 +405,13 @@ img {
     letter-spacing: 0.03em;
 }
 
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .footer-logo {
     margin: 0 0 20px 0;
     width: 145px;
+}
+
+.footer-item {
+    margin-top: 10px;
 }
 
 .footer-contact {
@@ -411,9 +420,4 @@ img {
 
 .footer-address {
     color: #ffffff;
-}
-
-.footer-mail {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
