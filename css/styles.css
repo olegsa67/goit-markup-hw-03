@@ -185,8 +185,6 @@ img {
 .main-title {
     width: 696px;
     margin: auto;
-    margin-top: 108px;
-    margin-bottom: 28px;
     /*   font-family: var(--main-font); */
     font-weight: 900;
     font-size: 44px;
@@ -203,7 +201,7 @@ img {
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-bottom: 107px;
+    margin-top: 30px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -226,9 +224,6 @@ img {
 }
 
 .button-filter {
-    max-width: 145px;
-    min-width: 73px;
-    max-height: 38px;
     padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
@@ -237,6 +232,7 @@ img {
     letter-spacing: 0.06em;
     color: var(--title-txt-cl);
     background-color: #F5F4FA;
+    border: none;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -292,6 +288,7 @@ img {
 .job-list {
     display: flex;
     gap: 30px;
+    padding-bottom: 94px;
 }
 
 .job-title {
